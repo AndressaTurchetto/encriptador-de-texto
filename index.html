@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="c-header">
+        <img class="container__output__area__image-logo" src="./assets/img/Frame_6.png" alt="logo da Alura">
+    </header>
+    <main class="container-general">
+        <section class="container__data__entry">
+          <textarea name="text" cols="20" rows="10" class="container__input__area"
+            id="input-area">Digite seu texto</textarea>
+          <section class="container__information__area">
+            <span class="iconify container__information__area__icon" data-icon="ion:information-circle"></span>
+            <p class="container__information__area__text">Apenas letras minúsculas e sem acentos</p>
+          </section>
+          <section class="container-general__service-buttons">
+            <button class="container__service__buttons__encrypts" id="button-encrypt">
+              Criptografar
+            </button>
+            <button class="container__service__buttons__decrypts" id="button-decrypt">
+              Descriptografar
+            </button>
+          </section>
+        </section>
+        <section class="container-general__data-output">
+          <div class="container__output__area" id="output-area">
+            <div class="container__center__area" id="hide-area">
+              <img class="container__output__area__image__search" src="./assets/img/homem_lupa.jpg"
+                alt="imagem de um homem com uma lupa">
+            </div>
+            <h2 class="container__output__area__title-empty-area" id="hide-area2">
+              Nenhuma mensagem encontrada
+            </h2>
+            <p class="container__output__area__area-receiving-output" id="output-area-text">
+              Digite um texto que você queira criptografar ou descriptografar.
+            </p>
+            <button class="container__service__buttons__copiartexto" onclick="copiarTexto()">
+              Copiar
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__container-dev">
+          <span class="iconify footer__container-dev__icon" data-icon="akar-icons:github-fill"></span>
+          <a href="#" class="footer__container-dev__link" target="_Blank">Desenvolvido por Andressa Turchetto</a>
+        </div>
+      </footer>
+      <script>
+        function copiarTexto() {
+          var texto = document.getElementById("output-area-text").textContent; // Corrigido para pegar o texto da área de saída
+    
+          // Criar um elemento de input para copiar o texto
+          var input = document.createElement('input');
+          input.setAttribute('value', texto);
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand('copy');
+          document.body.removeChild(input);
+          alert("Texto copiado: " + texto);
+        }
+      </script>
+      <script src="./assets/js/script.js"></script>
+      <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    
+</body>
+</html>
