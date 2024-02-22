@@ -48,3 +48,4 @@ buttonDecrypt.onclick = () => {
 
     outputAreaText.innerHTML = decrypt
 }
+

@@ -121,7 +121,7 @@ body {
   transition: all 300ms ease-out;
   background-size: 200% 100%;
   color: var(--cor2);
-  position: fixed;
+  position: static;
   bottom: 0px;
   right: 160px;
 }
