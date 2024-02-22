@@ -7,7 +7,8 @@
     --cor2: #0A3871;
     --cor3: #fff;
     --cor4: #343A40;
-     
+
+    --fonte1: 'Inter', sans-serif;
 }
 
 * {
@@ -20,7 +21,7 @@
 
 body {
   background: var(--cor1);
-  font-family: 'Inter', sans-serif;
+  font-family: var(--fonte1);
   margin: 0;
   padding: 0%;
   max-width: 100%;
@@ -79,8 +80,8 @@ body {
   justify-content: center;
 }
 
-.container__service__buttons__encrypts,
-.container__service__buttons__decrypts {
+.botao__criptografar,
+.botao__descriptografar {
   margin: 5rem;
   height: 5rem;
   width: 5rem;
@@ -89,7 +90,7 @@ body {
   margin-bottom: 5%;
 }
 
-.container__service__buttons__encrypts {
+.botao__criptografar {
   border: none;
   background: linear-gradient(to right, #195bac 50%, #195bac 50%);
   background-position: right bottom;
@@ -98,11 +99,11 @@ body {
   color:var(--cor3);
 }
 
-.container__service__buttons__encrypts:hover {
+.botao__criptografar:hover {
   background-position: left bottom;
 }
 
-.container__service__buttons__decrypts {
+.botao__descriptografar {
   background: none;
   border: 1px solid var(--cor2);
   background: linear-gradient(to right, #0A3871 50%, transparent 50%);
@@ -138,7 +139,7 @@ body {
   color:var(--cor3);
 }
 
-.container__service__buttons__decrypts:hover {
+.botao__descriptografar:hover {
   background-position: left bottom;
   color:var(--cor3);
 }
@@ -256,8 +257,8 @@ body {
     margin-left: 10rem;
   }
 
-  .container__service__buttons__encrypts,
-  .container__service__buttons__decrypts {
+  .botao__criptografar,
+  .botao__descriptografar {
     margin: 1rem;
     height: 3rem;
     width: 16rem;
