@@ -2,6 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400&display=swap');
 
+:root {
+    --cor1: #F3F5FC;
+    --cor2: #0A3871;
+    --cor3: #fff;
+     
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +18,7 @@
 }
 
 body {
-  background: #F3F5FC;
+  background: var(--cor1);
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0%;
@@ -28,7 +35,7 @@ body {
   height: 45px;
   margin-top: 0.2rem;
   resize: none;
-  color: #0A3871;
+  color: var(--cor2);
   font-size: 1rem;
   background: none;
   font-weight: 5px;
@@ -40,7 +47,7 @@ body {
   height: 328px;
   margin-top: 1rem;
   resize: none;
-  color: #0A3871;
+  color: var(--cor2);
   font-size: 2rem;
   background: none;
   font-weight: 200px;
@@ -55,7 +62,7 @@ body {
 
 .container__information__area__icon {
   font-size: 1.4rem;
-  color: #0A3871;
+  color: var(--cor2);
 }
 
 
@@ -87,7 +94,7 @@ body {
   background-position: right bottom;
   transition: all 300ms ease-out;
   background-size: 200% 100%;
-  color: #fff;
+  color:var(--cor3);
 }
 
 .container__service__buttons__encrypts:hover {
@@ -96,12 +103,12 @@ body {
 
 .container__service__buttons__decrypts {
   background: none;
-  border: 1px solid #0A3871;
+  border: 1px solid var(--cor2);
   background: linear-gradient(to right, #0A3871 50%, transparent 50%);
   background-position: right bottom;
   transition: all 300ms ease-out;
   background-size: 200% 100%;
-  color: #0A3871;
+  color: var(--cor2);
 }
 
 .container__service__buttons__copiartexto {
@@ -111,7 +118,7 @@ body {
   background-position: right bottom;
   transition: all 300ms ease-out;
   background-size: 200% 100%;
-  color: #0A3871;
+  color: var(--cor2);
   position: fixed;
   bottom: 0px;
   right: 160px;
@@ -127,18 +134,18 @@ body {
 
 .container__service__buttons__copiartexto:hover {
   background-position: left bottom;
-  color: #fff;
+  color:var(--cor3);
 }
 
 .container__service__buttons__decrypts:hover {
   background-position: left bottom;
-  color: #fff;
+  color:var(--cor3);
 }
 
 .container__output__area {
   margin: 0.5rem;
   padding: 1.2rem;
-  background: #FFFFFF;
+  background:var(--cor3); 
   border-radius: 1rem;
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   color: #343A40;
@@ -167,7 +174,7 @@ body {
 
 .footer__container-dev__icon {
   margin-right: 0.5rem;
-  color: #0A3871;
+  color: var(--cor2);
 }
 
 /*Animação de Deslizar o ícone e titulo no Header*/
