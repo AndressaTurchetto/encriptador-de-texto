@@ -7,18 +7,18 @@
     <title>Encriptador de texto</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="container__output__area__image-logo" src="assets/img/logo.png" alt="Logo Alura">
+    <header>
+        <img class="logo" src="assets/img/logo.png" alt="Logo Alura">
     </header>
-    <main class="container-general">
-        <section class="container__data__entry">
+    <main class="caixa">
+        <section class="caixa__texto">
           <textarea name="text" cols="20" rows="10" class="container__input__area"
-            id="input-area">Digite seu texto</textarea>
+            id="input-area" placeholder="Digite seu texto"></textarea>
           <section class="container__information__area">
             <span class="iconify container__information__area__icon" data-icon="ion:information-circle"></span>
             <p class="container__information__area__text">Apenas letras minúsculas e sem acentos</p>
           </section>
-          <section class="container-general__service-buttons">
+          <section class="caixa__service-buttons">
             <button class="container__service__buttons__encrypts" id="button-encrypt">
               Criptografar
             </button>
@@ -27,7 +27,7 @@
             </button>
           </section>
         </section>
-        <section class="container-general__data-output">
+        <section class="caixa__data-output">
           <div class="container__output__area" id="output-area">
             <div class="container__center__area" id="hide-area">
               <img class="container__output__area__image__search" src="./assets/img/homem_lupa.jpg"
