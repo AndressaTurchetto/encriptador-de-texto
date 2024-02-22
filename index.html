@@ -12,11 +12,11 @@
     </header>
     <main class="caixa">
         <section class="caixa__texto">
-          <textarea name="text" cols="20" rows="10" class="container__input__area"
+          <textarea name="text" cols="20" rows="10" class="caixa__texto__input"
             id="input-area" placeholder="Digite seu texto"></textarea>
-          <section class="container__information__area">
-            <span class="iconify container__information__area__icon" data-icon="ion:information-circle"></span>
-            <p class="container__information__area__text">Apenas letras minúsculas e sem acentos</p>
+          <section class="caixa__aviso">
+            <span data-icon="ion:information-circle"></span>
+            <p class="aviso">Apenas letras minúsculas e sem acentos</p>
           </section>
           <section class="caixa__service-buttons">
             <button class="container__service__buttons__encrypts" id="button-encrypt">
@@ -28,27 +28,27 @@
           </section>
         </section>
         <section class="caixa__data-output">
-          <div class="container__output__area" id="output-area">
-            <div class="container__center__area" id="hide-area">
-              <img class="container__output__area__image__search" src="./assets/img/homem_lupa.jpg"
-                alt="imagem de um homem com uma lupa">
+          <div class="caixa__texto__output" id="output-area">
+            <div class="caixa__texto__area" id="hide-area">
+              <img class="caixa__imagem" src="./assets/img/homem_lupa.jpg"
+                alt="Foto de um homem segurando uma lupa">
             </div>
-            <h2 class="container__output__area__title-empty-area" id="hide-area2">
+            <h2 class="caixa__mensagem" id="hide-area2">
               Nenhuma mensagem encontrada
             </h2>
-            <p class="container__output__area__area-receiving-output" id="output-area-text">
+            <p id="output-area-text">
               Digite um texto que você queira criptografar ou descriptografar.
             </p>
-            <button class="container__service__buttons__copiartexto" onclick="copiarTexto()">
+            <button class="botao__copiar" onclick="copiarTexto()">
               Copiar
             </button>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__container-dev">
-          <span class="iconify footer__container-dev__icon" data-icon="akar-icons:github-fill"></span>
-          <a href="https://github.com/AndressaTurchetto" class="footer__container-dev__link" target="_Blank">Desenvolvido por Andressa Turchetto</a>
+        <div class="footer__caixa">
+          <span class="iconify footer__caixa__icon" data-icon="akar-icons:github-fill"></span>
+          <a href="https://github.com/AndressaTurchetto" target="_Blank">Desenvolvido por Andressa Turchetto</a>
         </div>
       </footer>
       <script>
