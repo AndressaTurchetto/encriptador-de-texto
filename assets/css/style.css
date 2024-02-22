@@ -40,7 +40,7 @@ body {
   border: none;
 }
 
-.caixa__texto {
+.caixa {
   text-align: center;
 }
 
@@ -195,7 +195,7 @@ body {
 /*Responsividade para tablets*/
 @media (min-width: 482px) and (max-width: 767px) {
 
-  .caixa__texto {
+  .caixa {
     text-align: left;
   }
 
@@ -208,7 +208,7 @@ body {
 
 /*Responsividade para telas pequenas, laptops*/
 @media (min-width: 768px) and (max-width: 1024px) {
-  .caixa__texto {
+  .caixa {
     text-align: left;
   }
 
@@ -239,7 +239,7 @@ body {
     justify-content: right;
   }
 
-  .caixa__texto {
+  .caixa {
     text-align: left;
   }
 
