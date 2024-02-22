@@ -4,7 +4,7 @@ const buttonDecrypt = document.getElementById('button-decrypt')
 buttonEncrypt.onclick = () => {
     const textEntry = document.getElementById('input-area').value
     const outputArea = document.getElementById('output-area')
-    const outputAreaText = document.getElementById('output-area-text')
+    const outputAreaText = document.getElementById('output-text')
     const hideArea = document.getElementById('hide-area')
     const hideArea2 = document.getElementById('hide-area2')
     const arrayListText = textEntry.split('')
@@ -36,7 +36,7 @@ buttonEncrypt.onclick = () => {
 buttonDecrypt.onclick = () => {
     const textEntry = document.getElementById('input-area').value
     const outputArea = document.getElementById('output-area')
-    const outputAreaText = document.getElementById('output-area-text')
+    const outputAreaText = document.getElementById('output-text')
     const hideArea = document.getElementById('hide-area')
     const hideArea2 = document.getElementById('hide-area2')
 

@@ -18,7 +18,7 @@
             <span data-icon="ion:information-circle"></span>
             <p class="aviso">Apenas letras minúsculas e sem acentos</p>
           </section>
-          <section class="caixa__service-buttons">
+          <section class="botoes">
             <button class="botao__criptografar" id="button-encrypt">
               Criptografar
             </button>
@@ -27,7 +27,7 @@
             </button>
           </section>
         </section>
-        <section class="caixa__data-output">
+        <sectiona>
           <div class="caixa__texto__output" id="output-area">
             <div class="caixa__texto__area" id="hide-area">
               <img class="caixa__imagem" src="./assets/img/homem_lupa.jpg"
@@ -36,7 +36,7 @@
             <h2 class="caixa__mensagem" id="hide-area2">
               Nenhuma mensagem encontrada
             </h2>
-            <p id="output-area-text">
+            <p id="output-text">
               Digite um texto que você queira criptografar ou descriptografar.
             </p>
             <button class="botao__copiar" onclick="copiarTexto()">
@@ -53,7 +53,7 @@
       </footer>
       <script>
         function copiarTexto() {
-          var texto = document.getElementById("output-area-text").textContent; // Corrigido para pegar o texto da área de saída
+          var texto = document.getElementById("output-text").textContent; // Corrigido para pegar o texto da área de saída
     
           // Criar um elemento de input para copiar o texto
           var input = document.createElement('input');

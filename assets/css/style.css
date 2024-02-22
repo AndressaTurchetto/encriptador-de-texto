@@ -74,7 +74,7 @@ body {
   margin-left: 0;
 }
 
-.caixa__service-buttons {
+.botoes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -179,7 +179,7 @@ body {
   color: var(--cor2);
 }
 
-/*Animação de Deslizar o ícone e titulo no Header*/
+/*Animaçeão de Deslizar o ícone  titulo no Header*/
 @keyframes slip {
   from {
     margin-left: -20%;
