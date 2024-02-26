@@ -2,7 +2,7 @@ function criptografar() {
     let texto = document.getElementById("texto").value;
     let tituloMensagem = document.getElementById("titulo-mensagem");
     let paragrafo = document.getElementById("paragrafo");
-    let totoro = document.getElementById("totoro");
+    let lupa = document.getElementById("lupa");
     let textoCop = document.getElementById("copiar");
   
     let textoCriptografado = texto
@@ -16,10 +16,10 @@ function criptografar() {
       document.getElementById("texto").value = textoCriptografado;
       tituloMensagem.textContent = "Texto criptografado com sucesso";
       paragrafo.textContent = "";
-      totoro.src = "./imagens/st3.jpg";
+      lupa.src = "./imagens/st3.jpg";
       textoCop = "copiar";
     } else {
-      totoro.src = "./imagens/sm3.jpg";
+      lupa.src = "./imagens/sm3.jpg";
       tituloMensagem.textContent = "Nenhum texto foi encontrado";
       paragrafo.textContent = "Digite um texto que deseja criptografar e descriptografar";
       swal("Ooops!", "Digite um texto", "warning");
@@ -30,7 +30,7 @@ function criptografar() {
     let texto = document.getElementById("texto").value;
     let tituloMensagem = document.getElementById("titulo-mensagem");
     let paragrafo = document.getElementById("paragrafo");
-    let totoro = document.getElementById("totoro");
+    let lupa = document.getElementById("lupa");
     let textoCop = document.getElementById("copiar");
   
     let textoCriptografado = texto
@@ -44,10 +44,10 @@ function criptografar() {
         document.getElementById("texto").value = textoCriptografado;
         tituloMensagem.textContent = "Texto descriptografado com sucesso";
         paragrafo.textContent = "";
-        totoro.src = "./imagens/st3.jpg";
+        lupa.src = "./imagens/st3.jpg";
         textoCop = "copiar";
       } else {
-        totoro.src = "./imagens/sm3.jpg";
+        lupa.src = "./imagens/sm3.jpg";
         tituloMensagem.textContent = "Nenhum texto foi encontrado";
         paragrafo.textContent = "Digite um texto que deseja criptografar e descriptografar";
         swal("Ooops!", "Digite um texto", "warning");
