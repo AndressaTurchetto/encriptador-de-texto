@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+    body {
+        background-color: black;
+        width: 100vw;
+        height: 100vh;
+    }
+    img {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+{ /*CONFIGURAÇÕES PARA TABLET*/
+
+    body {
+    background-image: url(assets/img/lupa.jpeg);
+    }
+
+    .container {
+        width: 80vw;
+        height: 280px;
+        width: 70%;
+    }
+
+@media screen and (min-width: 992px) { /*CONFIGURAÇÕES PARA DESKTOP*/
+
+    body {
+        background-image: url(assets/img/lupa.jpeg);
+        }
+
+    section#login {
+        width: 950px;
+        height: 350px;
+    }
+
+    section#login > div#imagem {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: left;
+        width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+        margin: 20px 0px;
+    }
+}   
+
+@media screen and (max-width: 768px)  {
+      .container {
+        display: flex;
+        flex-direction: initial;
+      }
+      .criptografado {
+        width: 100%;
+      }
+      .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+      }
+      .regra {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+      }
+      .regra p {
+        font-size: 16px;
+      }
+      .botoes {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+      }
+      .btn-criptografar,
+      .btn-descriptografar, 
+      .btn-copiar {
+        width: 48%;
+        border-radius: 16px;
+      }
+      .btn-criptografar:hover,
+      .btn-descriptografar:hover,
+      .btn-copiar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+      }
+      .criptografado {
+        width: 80%;
+        height: 37%;
+        left: 10%;
+        top: 80%;
+      }
+      .mensagem-criptografado {
+        width: 100%;
+        top: 5%;
+      }
+      .criptografado .lupa {
+        top: 0;
+        display: none;
+      }
+  
+      .rodape {
+        margin: 4%;
+        padding: 30% 10% 10% 10%;
+      }
+      .rodape h3 {
+        font-size: 16px;
+      }
+  
+    }*/
