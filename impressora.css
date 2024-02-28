@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*ESTILO PARA IMPRESSORAS*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+footer::after {
+    content: 'Esse artigo foi desenvolvido por Andressa Turchetto';
+}
+
+body {
+    background: black;
+    width: 100%;
+}
