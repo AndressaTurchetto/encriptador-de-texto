@@ -60,7 +60,7 @@ body {
 
 .apresentacao__conteudo__titulo {
     font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__conteudo__texto {
