@@ -4,7 +4,7 @@
 :root {
     --cor-primaria: #000000; 
     --cor-secundaria: #f6f6f6;
-    --cor-terciaria: #22d4fd;
+    --cor-terciaria: #E6A4B4;
     --cor-hover: #272727;
 
     --fonte-primaria: 'Krona One', sans-serif;
@@ -103,7 +103,8 @@ body {
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: 40%;
+    border-radius: 20%;
 }
 
 .rodape {
@@ -114,6 +115,12 @@ body {
     padding: 24px;
     text-align: center;
     font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-primaria);
 }
 
 @media (max-width: 1200px) {
