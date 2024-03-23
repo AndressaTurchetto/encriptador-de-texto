@@ -1,8 +1,18 @@
+@charset "UTF-8";
+
+/* Cores*/
+:root {
+    --cor1: #1875E8;
+    --cor2: #fff;
+    --cor3: #6f6f70;
+}
+
+/* Configurações gerais*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
+    color: var(--cor2);
 }
 
 body {
@@ -25,6 +35,7 @@ body::before {
     opacity: 0.4;
 }
 
+/* Configuração container*/
 .container {
     width: 80%;
     min-height: 50vh;
@@ -32,7 +43,7 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 1px solid #1875E8;
+    border: 1px solid var(--cor1);
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
     background-image: url("img/Ruido.png");
     background-size: 100% 100%;
@@ -59,7 +70,7 @@ body::before {
 }
 
 .container__texto-azul {
-    color: #1875E8;
+    color: var(--cor1);
     display: block;
 
 }
@@ -71,13 +82,14 @@ body::before {
     margin-bottom: 12px;
 }
 
+/* Configurações botões */
 .container__input {
     width: 130px;
     height: 72px;
     border-radius: 16px;
-    background-color: #FFF;
+    background-color: var(--cor2);
     border: none;
-    color: #1875E8;
+    color: var(--cor1);
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
@@ -92,7 +104,7 @@ body::before {
 
 .container__botao {
     border-radius: 16px;
-    background: #1875E8;
+    background: var(--cor1);
     padding: 16px 24px;
     font-size: 24px;
     width: 100%;
@@ -103,7 +115,7 @@ body::before {
 
 .container__botao-desabilitado {
     border-radius: 16px;
-    background: #6f6f70;
+    background: var(--cor3);
     padding: 16px 24px;
     font-size: 24px;
     width: 100%;
@@ -112,6 +124,7 @@ body::before {
     cursor: not-allowed;
 }
 
+/*Configuração de textos*/
 h1 {
     font-family: 'Chakra Petch', sans-serif;
     font-size: 72px;
@@ -122,7 +135,7 @@ h1 {
 }
 
 .texto__paragrafo {
-    color: #FFF;
+    color: var(--cor2);
     font-family: 'Inter';
     font-size: 32px;
     font-style: normal;
@@ -137,9 +150,10 @@ h1 {
 }
 
 button:disabled {
-    background-color: gray;
+    background-color: var(--cor3);
 }
 
+/* Configuração para grandes telas */
 @media screen and (max-width: 1250px) {
     .container__imagem-pessoa {
         display: none;
